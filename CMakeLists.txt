@@ -11,7 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED 1)
 find_package(Boost 1.58 REQUIRED COMPONENTS program_options)
 
 add_subdirectory(library/geas)
-#add_subdirectory(library/yaml-cpp)
+add_subdirectory(library/yaml-cpp)
 
 add_library(lazycbs INTERFACE)
 target_include_directories(
@@ -19,7 +19,7 @@ target_include_directories(
   INTERFACE 
   include 
   library/geas/include
-  #library/yaml-cpp/include
+  library/yaml-cpp/include
 )
 
 file(GLOB LAZY_CBS_SOURCES "include/lazycbs/*")
