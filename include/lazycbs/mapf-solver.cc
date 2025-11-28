@@ -1,6 +1,7 @@
 #ifndef GEAS_MAPF__SOLVER_CPP
 #define GEAS_MAPF__SOLVER_CPP
 
+#include <cstdint>
 #include <geas/constraints/builtins.h>
 
 #include <lazycbs/mapf-solver.h>
